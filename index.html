@@ -4,41 +4,66 @@
   <meta charset="UTF-8">
   <title>☕ Coffee Shop Sales Dashboard</title>
   <style>
-    body {
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 40px;
       background-color: #f7f7f7;
+      overflow: hidden;
     }
-    h1 {
-      font-size: 2.2em;
-      margin-bottom: 10px;
+    .header {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffffff;
+      z-index: 1;
     }
-    p {
+    .header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .header p {
+      margin: 8px 0 0;
       font-size: 1.1em;
-      margin-bottom: 25px;
+      color: #444;
+    }
+    .iframe-container {
+      position: absolute;
+      top: 120px;
+      left: 0;
+      right: 0;
+      bottom: 0;
     }
     iframe {
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      height: 100%;
+      border: none;
     }
     .note {
-      font-size: 0.9em;
+      position: absolute;
+      bottom: 5px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.85em;
       color: #777;
-      margin-top: 15px;
+      background-color: #f7f7f7;
     }
   </style>
 </head>
 <body>
-  <h1>☕ Coffee Shop Sales Dashboard</h1>
-  <p>Explore interactive insights into sales trends, customer preferences, and regional performance.</p>
+  <div class="header">
+    <h1>☕ Coffee Shop Sales Dashboard</h1>
+    <p>Explore interactive insights into sales trends, customer preferences, and regional performance.</p>
+  </div>
 
-  <!-- Embedded Excel dashboard from OneDrive -->
-  <iframe width="1000" height="600" frameborder="0" scrolling="no"
-    src="https://1drv.ms/x/c/231d2c9fb3e934e8/IQTFBR1vT2s7QLXJ6-fu4Y7kAZCUX0416jR4U-l_UDLUUb8?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True">
-  </iframe>
+  <div class="iframe-container">
+    <iframe
+      src="https://1drv.ms/x/c/231d2c9fb3e934e8/IQTFBR1vT2s7QLXJ6-fu4Y7kAZCUX0416jR4U-l_UDLUUb8?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True">
+    </iframe>
+  </div>
 
-  <p class="note">If the dashboard doesn't load, please ensure OneDrive sharing is set to public.</p>
+  <div class="note">
+    If the dashboard doesn't load, please ensure OneDrive sharing is set to public.
+  </div>
 </body>
 </html>
