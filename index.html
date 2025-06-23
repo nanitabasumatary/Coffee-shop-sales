@@ -2,18 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Coffee Shop Sales Dashboard</title>
+  <title>☕ Coffee Shop Sales Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+      background-color: #f5f5f5;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    iframe {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+    .note {
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 10px;
+    }
+  </style>
 </head>
-<body style="text-align:center; font-family:sans-serif; padding: 20px;">
+<body>
   <h1>☕ Coffee Shop Sales Dashboard</h1>
   <p>Explore interactive insights into sales trends, customer preferences, and regional performance.</p>
 
   <!-- Embedded Excel dashboard from OneDrive -->
+  <iframe width="800" height="600" frameborder="0" scrolling="no"
+    src="https://1drv.ms/x/c/231d2c9fb3e934e8/IQTFBR1vT2s7QLXJ6-fu4Y7kAZCUX0416jR4U-l_UDLUUb8?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True">
+  </iframe>
 
-
-  <iframe src="https://onedrive.live.com/embed?resid=231D2C9FB3E934E8%21106&authkey=!AMaT12345EXAMPLEKEY&em=2"
-        width="1000" height="600" frameborder="0">This is an embedded Excel file.</iframe>
-
-  <p style="font-size: 0.9em;"><em>If the dashboard doesn't load, make sure OneDrive sharing is set to public.</em></p>
+  <p class="note">If the dashboard doesn't load, please ensure OneDrive sharing is set to public.</p>
 </body>
 </html>
